@@ -1,6 +1,6 @@
 {
   "name": "react-widget-dev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "amis自定义组件模板（react技术栈-带完整webpack工程）",
   "keywords": [
     "自定义组件模板",

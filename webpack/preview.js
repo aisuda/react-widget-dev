@@ -18,8 +18,8 @@ class WrapperPlugin {
             }
 
             for (const file of chunk.files) {
-              // todo 应该有更好的方式判断是不是 css
-              if (file !== "preview.js") {
+              if (/.css$/.test(file)) {
+                // 不包裹css文件
                 continue;
               }
 

@@ -51,23 +51,7 @@ module.exports = merge(commonConfig, {
       // both options are optional
       filename: '[name].css',
       chunkFilename: '[id].css'
-    }),
-
-    {
-      apply(compiler) {
-        compiler.hooks.shouldEmit.tap(
-          'Remove styles from output',
-          compilation => {
-            delete compilation.assets['style.min.js'];
-            delete compilation.assets['editor.min.js.map'];
-            delete compilation.assets['index.min.js.map'];
-            delete compilation.assets['style.min.js.map'];
-            delete compilation.assets['style.css.map'];
-            return true;
-          }
-        );
-      }
-    }
+    })
   ],
   externals: [
     nodeExternals({
