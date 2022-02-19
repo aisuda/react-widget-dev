@@ -9,8 +9,8 @@ module.exports = merge(commonConfig, {
   entry: { // 调试模式的入口
     index: [
       '../editor/EditorDemo.jsx',
-      '../src/index.tsx',
-      '../src/plugin.tsx',
+      '../src/index.jsx',
+      '../src/plugin.jsx',
     ],
   },
   // devServer: {

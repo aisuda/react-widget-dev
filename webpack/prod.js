@@ -9,8 +9,8 @@ const commonConfig = require('./common');
 module.exports = merge(commonConfig, {
   mode: 'production',
   entry: {
-    index: ['./index.tsx'],
-    plugin: ['./plugin.tsx'],
+    index: ['./index.jsx'],
+    plugin: ['./plugin.jsx'],
   },
   output: {
     filename: '[name].js',

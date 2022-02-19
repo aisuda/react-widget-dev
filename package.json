@@ -13,13 +13,15 @@
   "author": "fex",
   "license": "MIT",
   "scripts": {
+    "dev": "npm run start-dev",
+    "preview": "npm run start-preview",
+    "linkDebug": "npm run start-link-debug",
     "build": "npm run clean-dist && webpack --config=webpack/prod.js && npm run declaration",
     "clean-dist": "rimraf dist/*",
     "lint": "eslint './src/**/*.{js,ts,tsx}' --quiet",
-    "dev": "npm run start-dev",
-    "preview": "npm run start-preview",
     "start-dev": "webpack serve --config=webpack/dev.js --host 0.0.0.0",
-    "start-preview": "webpack serve --config=webpack/preview.js --host 0.0.0.0 --port 8081",
+    "start-preview": "webpack serve --config=webpack/preview.js --host 0.0.0.0",
+    "start-link-debug": "webpack serve --config=webpack/linkDebug.js --host 0.0.0.0 --port 8081",
     "declaration": "tsc --allowJs --declaration --emitDeclarationOnly --declarationDir ./dist --rootDir ./src"
   },
   "files": [

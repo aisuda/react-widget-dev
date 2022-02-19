@@ -1,9 +1,4 @@
-/**
- * @file 编辑器扩展, 增加自定义组件
- */
- import { registerAmisEditorPlugin } from 'amis-widget';
-
- export class InfoCardPlugin {
+export class InfoCardPlugin {
    rendererName = 'react-info-card';
    $schema = '/schemas/UnkownSchema.json';
    name = 'react-info-card';
@@ -50,17 +45,7 @@
        value: 2021,
      },
    ];
- }
+}
  
- registerAmisEditorPlugin(InfoCardPlugin, {
-   rendererName: 'react-info-card',
-   name: 'react-info-card',
-   // description: '信息展示卡片',
-   // tags: ['展示'],
-   order: 99,
-   // icon: 'fa fa-file-code-o',
-   // panelTitle: '配置'
- });
- 
- export default InfoCardPlugin;
+export default InfoCardPlugin;
  
