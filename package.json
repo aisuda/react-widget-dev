@@ -109,7 +109,7 @@
   },
   "dependencies": {
     "tslib": "^2.3.0",
-    "amis-widget": "1.2.6",
+    "amis-widget": "1.3.0",
     "antd": "^3.26.20",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
